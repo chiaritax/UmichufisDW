@@ -15,6 +15,7 @@ header {
   background-color: #000; }
   header .navContainer {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; }
@@ -22,6 +23,7 @@ header {
       width: 75px; }
     header .navContainer .menuDesplegable {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
@@ -102,9 +104,10 @@ header {
   font-family: "Roboto", sans-serif; }
 
 .collage {
-  height: 500px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  height: 500px;
   align-items: center;
   background-color: #000;
   clip-path: polygon(0 9%, 100% 4%, 100% 97%, 0 80%); }
@@ -120,6 +123,7 @@ header {
 
 .bookUmichufis {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
@@ -139,6 +143,7 @@ header {
 
 .multimediaContainer {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 2rem 0; }
@@ -154,9 +159,10 @@ header {
   font-family: "Nunito", sans-serif; }
 
 .storieUmichufis {
-  height: 500px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  height: 500px;
   align-items: center;
   background-color: #000;
   clip-path: polygon(0 9%, 100% 4%, 100% 97%, 0 80%); }
@@ -165,6 +171,7 @@ header {
 
 .familyUmichufis {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center; }
   .familyUmichufis .familyUmichufisPicture {
@@ -172,11 +179,13 @@ header {
 
 .tiendaContainer {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin: 0 5%;
   flex-wrap: wrap; }
   .tiendaContainer .itemUmichufis {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     background-color: #fff;
@@ -230,6 +239,15 @@ header {
   .collageGaleriaContainer div img:hover {
     transform: scale(1.1); }
 
+.contactForm .contactFormName input, .contactForm .contactFormEmail input, .contactForm .contactFormUser select , .contactForm textarea {
+  padding: 8px 15px !important;
+  border: 1px solid #949494;
+  background-color: #fff;
+  color: #4a648e;
+  max-width: 100%;
+  line-height: 1.2;
+  border-radius: 2px; }
+
 .textContainerContact {
   margin-left: 3rem;
   margin-top: 2.5rem;
@@ -257,50 +275,19 @@ header {
     justify-content: center; }
     .contactForm .contactFormName label {
       font-size: 0.7rem; }
-    .contactForm .contactFormName input {
-      padding: 8px 15px;
-      border: 1px solid #949494;
-      background-color: #fff;
-      color: #4a648e;
-      max-width: 100%;
-      line-height: 1.2;
-      border-radius: 2px; }
   .contactForm .contactFormEmail {
     display: flex;
     flex-direction: column;
     justify-content: center; }
     .contactForm .contactFormEmail label {
       font-size: 0.7rem; }
-    .contactForm .contactFormEmail input {
-      padding: 8px 15px;
-      border: 1px solid #949494;
-      background-color: #fff;
-      color: #4a648e;
-      max-width: 100%;
-      line-height: 1.2;
-      border-radius: 2px; }
   .contactForm .contactFormUser {
     display: flex;
     flex-direction: column;
     justify-content: center; }
     .contactForm .contactFormUser label {
       font-size: 0.7rem; }
-    .contactForm .contactFormUser select  {
-      padding: 8px 15px !important;
-      border: 1px solid #949494;
-      background-color: #fff;
-      color: #4a648e;
-      max-width: 100%;
-      line-height: 1.2;
-      border-radius: 2px; }
   .contactForm textarea {
-    padding: 8px 15px;
-    border: 1px solid #949494;
-    background-color: #fff;
-    color: #4a648e;
-    max-width: 100%;
-    line-height: 1.2;
-    border-radius: 2px;
     width: 100%;
     margin-top: 1rem; }
   .contactForm .contactFormBtn button {
@@ -315,23 +302,22 @@ header {
       box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.192); }
 
 .botonEnviar {
-  margin-top: 0.2rem; }
-  .botonEnviar a {
-    font-family: "Nunito", sans-serif;
-    border: 1px solid #bc467d;
-    font-size: 1rem;
-    border-radius: 10px;
-    background: linear-gradient(90deg, #bc467d 0%, #a85079 100%);
-    text-decoration: none;
-    color: #000;
-    text-align: center;
-    display: inline-block;
-    width: 150px;
-    cursor: pointer;
-    font-family: "Nunito", sans-serif; }
-    .botonEnviar a:hover {
-      -webkit-box-shadow: 0px 0px 8px 1px rgba(121, 121, 121, 0.6);
-      box-shadow: 0px 0px 8px 1px rgba(121, 121, 121, 0.6); }
+  margin-top: 0.2rem;
+  font-family: "Nunito", sans-serif;
+  border: 1px solid #bc467d;
+  font-size: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #bc467d 0%, #a85079 100%);
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif; }
+  .botonEnviar:hover {
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(121, 121, 121, 0.6);
+    box-shadow: 0px 0px 8px 1px rgba(121, 121, 121, 0.6); }
 
 .itemUmichufisBody a {
   font-family: "Nunito", sans-serif;
@@ -356,6 +342,7 @@ footer {
   clip-path: polygon(0 0, 100% 28%, 100% 100%, 0 100%);
   color: #f5f5f5;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center; }
   @media screen and (max-width: 768px) {

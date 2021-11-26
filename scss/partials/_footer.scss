@@ -8,8 +8,7 @@ footer {
   background-color: $black;
   clip-path: polygon(0 0, 100% 28%, 100% 100%, 0 100%);
   color: $whitesmoke;
-  display: flex;
-  justify-content: space-around;
+  @include flex(flex, row, space-around);
   align-items: center;
 
   @media screen and (max-width: 768px) {
@@ -52,9 +51,7 @@ footer {
   }
 
   .contactContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @include flex(flex, column, space-around);
     align-items: center;
     font-family: $fuenteTextos;
 

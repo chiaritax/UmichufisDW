@@ -1,0 +1,31 @@
+// INICIO MIXINS
+
+@mixin buttons($fuente, $color1, $color2, $colorfuente, $ancho) {
+    font-family: $fuente;
+    border: 1px solid $color1;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(
+        90deg,
+        $color1 0%,
+        $color2 100%
+    );
+    text-decoration: none;
+    color: $colorfuente;
+    text-align: center;
+    display: inline-block;
+    width: $ancho;
+    cursor: pointer;
+    font-family: $fuente;
+
+    &:hover {
+        -webkit-box-shadow: 0px 0px 8px 1px rgba(121, 121, 121, 0.6);
+        box-shadow: 0px 0px 8px 1px rgba(121, 121, 121, 0.6);
+    }
+}
+
+@mixin flex ($display, $direction, $justify) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+}

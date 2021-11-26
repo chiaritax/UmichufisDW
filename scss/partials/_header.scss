@@ -7,8 +7,7 @@ header {
   background-color: $black;
 
   .navContainer {
-    display: flex;
-    justify-content: space-between;
+    @include flex(flex, row, space-between);
     align-items: center;
     flex-wrap: wrap;
 
@@ -17,8 +16,7 @@ header {
     }
 
     .menuDesplegable {
-      display: flex;
-      justify-content: space-between;
+      @include flex(flex, row, space-between);
       align-items: center;
       flex-wrap: wrap;
       margin: 0;

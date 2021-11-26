@@ -4,14 +4,12 @@
 @import "../variables/mixins";
 
     .tiendaContainer{
-        display: flex;
-        justify-content: center;
+        @include flex(flex, row, center);
         margin: 0 5%;
         flex-wrap: wrap;
 
         .itemUmichufis {
-            display: flex;
-            justify-content: center;
+            @include flex(flex, row, center);
             flex-wrap: wrap;
             background-color: $blanco;
             width: 300px;

@@ -1,7 +1,7 @@
 // PAGINA DE CONTACTO
 
 @import "../variables/variables";
-@import "../variables/mixins";
+@import "../variables/extend";
 
 .textContainerContact {
   margin-left: 3rem;
@@ -34,49 +34,31 @@
   }
 
   .contactFormName {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex (flex, column, center);
 
     label {
       font-size: 0.7rem;
     }
 
     input {
-      padding: 8px 15px;
-      border: 1px solid #949494;
-      background-color: #fff;
-      color: #4a648e;
-      max-width: 100%;
-      line-height: 1.2;
-      border-radius: 2px;
+     @extend %inputs;
     }
   }
 
   .contactFormEmail {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex (flex, column, center);
 
     label {
       font-size: 0.7rem;
     }
 
     input {
-      padding: 8px 15px;
-      border: 1px solid #949494;
-      background-color: #fff;
-      color: #4a648e;
-      max-width: 100%;
-      line-height: 1.2;
-      border-radius: 2px;
+      @extend %inputs;
     }
   }
 
   .contactFormUser {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex (flex, column, center);
     
 
     label {
@@ -84,24 +66,12 @@
     }
 
     select {
-      padding: 8px 15px!important;
-      border: 1px solid #949494;
-      background-color: #fff;
-      color: #4a648e;
-      max-width: 100%;
-      line-height: 1.2;
-      border-radius: 2px;
+      @extend %inputs;
     }
   }
 
   textarea {
-    padding: 8px 15px;
-    border: 1px solid #949494;
-    background-color: $blanco;
-    color: #4a648e;
-    max-width: 100%;
-    line-height: 1.2;
-    border-radius: 2px;
+    @extend %inputs;
     width: 100%;
     margin-top: 1rem;
   }
