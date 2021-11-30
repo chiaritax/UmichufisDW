@@ -12,6 +12,6 @@
 
 .itemUmichufisBody {
   a {
-    @include buttons($fuenteTextos, $pastelMagenta, $pastelMagentaOscuro, $black, 150px);
+    @include buttons($fuenteTextos, $pastelMagenta, $pastelMagentaOscuro, $blanco, 150px);
   }
 }
