@@ -42,13 +42,10 @@
       align-items: flex-end;
       }
       
-      span {
-        font-size: 2rem;
-        color: $black;
-      }
     }
 
-  .xmasPromoContainer {
+  .xmasPromoContainer {   
+    
       display: grid;
       justify-content: center;
       grid-template-areas: "uno dos tres"
@@ -104,6 +101,7 @@
             }
         }
     }
+
   }
   
 

@@ -36,3 +36,16 @@
     font-family: $fuenteTitulo;
 }
 
+.titleCombos{
+    color: $black;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: $fuenteTitulo;
+    .titleContainerTitle {
+        font-size: 2.876rem;
+        .titleContainerUmichufis {
+            color: $pastelMagenta;
+
+        }
+    }
+}

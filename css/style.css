@@ -105,6 +105,16 @@ header {
   color: #000;
   font-family: "Roboto", sans-serif; }
 
+.titleCombos {
+  color: #000;
+  margin-top: 2rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif; }
+  .titleCombos .titleContainerTitle {
+    font-size: 2.876rem; }
+    .titleCombos .titleContainerTitle .titleContainerUmichufis {
+      color: #bc467d; }
+
 .collage {
   display: flex;
   flex-direction: row;
@@ -140,9 +150,6 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: flex-end; }
-  .monthFav span {
-    font-size: 2rem;
-    color: #000; }
 
 .xmasPromoContainer {
   display: grid;
