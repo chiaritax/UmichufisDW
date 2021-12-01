@@ -107,11 +107,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 500px;
+  height: 400px;
   align-items: center;
   background-color: #000;
-  clip-path: polygon(0 9%, 100% 4%, 100% 97%, 0 80%); }
+  clip-path: polygon(0 15%, 100% 4%, 100% 97%, 0 80%); }
   .collage .collageUmichufis {
+    margin-bottom: 4.3rem;
     width: 43%;
     max-width: 500px; }
     @media screen and (max-width: 768px) {
@@ -121,37 +122,25 @@ header {
       .collage .collageUmichufis {
         width: 70%; } }
 
-.bookUmichufis {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 5rem; }
-  .bookUmichufis .bookImage img {
-    width: 100%; }
-  .bookUmichufis .bookText {
-    font-family: "Nunito", sans-serif;
-    background-color: #000;
-    max-width: 600px; }
-    .bookUmichufis .bookText h2 {
-      color: #bc467d;
-      font-family: "Roboto", sans-serif; }
-    .bookUmichufis .bookText p {
-      color: #f5f5f5; }
+.carouselUmichufis {
+  max-width: 800px;
+  margin: 0 auto; }
 
-.multimediaContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 2rem 0; }
-  .multimediaContainer .youtubeVideo {
-    min-width: 500px; }
-    @media screen and (max-width: 768px) {
-      .multimediaContainer .youtubeVideo {
-        min-width: 100%; } }
+.monthFav {
+  margin: 3rem 0; }
+  .monthFav .xmasPromo {
+    background-image: url(../../assets/images/PROMONAVIDAD.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end; }
+    .monthFav .xmasPromo span {
+      font-size: 2rem;
+      color: #000; }
 
 .container  .storieContainerText {
   text-align: center;
@@ -335,6 +324,26 @@ header {
   .itemUmichufisBody a:hover {
     -webkit-box-shadow: 0px 0px 8px 1px rgba(121, 121, 121, 0.6);
     box-shadow: 0px 0px 8px 1px rgba(121, 121, 121, 0.6); }
+
+.botonTienda {
+  margin: 0.5rem 0;
+  text-align: center; }
+  .botonTienda a {
+    font-family: "Nunito", sans-serif;
+    border: 1px solid #bc467d;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #bc467d 0%, #a85079 100%);
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 250px;
+    cursor: pointer;
+    font-family: "Nunito", sans-serif; }
+    .botonTienda a:hover {
+      -webkit-box-shadow: 0px 0px 8px 1px rgba(121, 121, 121, 0.6);
+      box-shadow: 0px 0px 8px 1px rgba(121, 121, 121, 0.6); }
 
 footer {
   min-height: 330px;

@@ -5,12 +5,13 @@
 
   .collage {
     @include flex(flex, row, center);
-    height: 500px;
+    height: 400px;
     align-items: center;
     background-color: $black;
-    clip-path: polygon(0 9%, 100% 4%, 100% 97%, 0 80%);
+    clip-path: polygon(0 15%, 100% 4%, 100% 97%, 0 80%);
 
     .collageUmichufis {
+      margin-bottom: 4.3rem;
       width: 43%;
       max-width: 500px;
 
@@ -24,46 +25,26 @@
     }
   }
 
-  .bookUmichufis {
-    @include flex(flex, row, center);
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 5rem;
+  .carouselUmichufis {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-    .bookImage {
-        img {
-            width: 100%;
-        }
-    }
+  .monthFav {
+    margin: 3rem 0;
+    .xmasPromo {
+      background-image: url(../../assets/images/PROMONAVIDAD.webp);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+      @include flex(flex, row, center);
+      align-items: flex-end;
 
-    .bookText {
-        font-family: $fuenteTextos;
-        background-color: $black;
-        max-width: 600px; 
-
-        h2 {
-            color: $pastelMagenta;
-            font-family: $fuenteTitulo;
-        }
-
-        p {
-            color: $whitesmoke;
-        }
-    }
-  }
-
-  .multimediaContainer {
-    @include flex(flex, row, space-around);
-    flex-wrap: wrap;
-    margin: 2rem 0;
-    
-    .youtubeVideo {
-        min-width: 500px;
-
-        @media screen and (max-width: 768px) {
-            min-width: 100%;
-        }
+      span {
+        font-size: 2rem;
+        color: $black;
+      }
     }
   }
 
