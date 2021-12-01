@@ -12,7 +12,9 @@ body {
   overflow-x: hidden; }
 
 header {
-  background-color: #000; }
+  background-color: #000;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.923);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.923); }
   header .navContainer {
     display: flex;
     flex-direction: row;
@@ -141,6 +143,34 @@ header {
   .monthFav span {
     font-size: 2rem;
     color: #000; }
+
+.xmasPromoContainer {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "uno dos tres" "cuatro cinco seis";
+  gap: 10px; }
+  @media screen and (max-width: 900px) {
+    .xmasPromoContainer {
+      grid-template-areas: "uno dos" "tres cuatro" "cinco seis"; } }
+  @media screen and (max-width: 600px) {
+    .xmasPromoContainer {
+      grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis"; } }
+  .xmasPromoContainer .comboXmas1 {
+    grid-area: uno; }
+  .xmasPromoContainer .comboXmas2 {
+    grid-area: dos; }
+  .xmasPromoContainer .comboXmas3 {
+    grid-area: tres; }
+  .xmasPromoContainer .comboXmas4 {
+    grid-area: cuatro; }
+  .xmasPromoContainer .comboXmas5 {
+    grid-area: cinco; }
+  .xmasPromoContainer .comboXmas6 {
+    grid-area: seis; }
+  .xmasPromoContainer div img:hover {
+    transform: scale(1.03);
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.6); }
 
 .container  .storieContainerText {
   text-align: center;

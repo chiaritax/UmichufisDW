@@ -42,11 +42,68 @@
       align-items: flex-end;
       }
       
-
       span {
         font-size: 2rem;
         color: $black;
       }
     }
+
+  .xmasPromoContainer {
+      display: grid;
+      justify-content: center;
+      grid-template-areas: "uno dos tres"
+                          "cuatro cinco seis";
+      gap: 10px;
+  
+  
+      @media screen and (max-width: 900px) {
+          grid-template-areas: "uno dos"
+                               "tres cuatro"
+                               "cinco seis";
+      }
+  
+      @media screen and (max-width: 600px) {
+          grid-template-areas: "uno"
+                               "dos"
+                               "tres"
+                               "cuatro"
+                               "cinco"
+                               "seis";
+      }
+  
+      .comboXmas1 {
+          grid-area: uno;
+      }
+  
+      .comboXmas2 {
+          grid-area: dos;
+      }
+  
+      .comboXmas3 {
+          grid-area: tres;
+      }
+  
+      .comboXmas4 {
+          grid-area: cuatro;
+      }
+  
+      .comboXmas5 {
+          grid-area: cinco;
+      }
+
+      .comboXmas6 {
+        grid-area: seis;
+      }
+
+      div {
+        img {
+            &:hover {
+                transform: scale(1.03);
+                -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.6);
+                box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.6);
+            }
+        }
+    }
+  }
   
 
