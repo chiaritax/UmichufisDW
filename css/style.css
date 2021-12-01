@@ -138,9 +138,9 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: flex-end; }
-    .monthFav .xmasPromo span {
-      font-size: 2rem;
-      color: #000; }
+  .monthFav span {
+    font-size: 2rem;
+    color: #000; }
 
 .container  .storieContainerText {
   text-align: center;
