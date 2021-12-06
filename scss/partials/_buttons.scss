@@ -6,8 +6,9 @@
 
 .botonEnviar {
   margin-top: 0.2rem;
-
-  @include buttons($fuenteTextos, $pastelMagenta, $pastelMagentaOscuro, $blanco, 150px);
+  button {
+    @include buttons($fuenteTextos, $pastelMagenta, $pastelMagentaOscuro, $blanco, 150px);
+  }
 }
 
 .itemUmichufisBody {

@@ -29,7 +29,8 @@ header {
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      margin: 0; }
+      margin: 0;
+      padding: 0; }
       @media screen and (max-width: 768px) {
         header .navContainer .menuDesplegable {
           flex-direction: column;
@@ -39,8 +40,8 @@ header {
       header .navContainer .menuDesplegable li {
         list-style: none;
         font-size: 1rem;
-        margin-left: 2rem;
-        padding: 12px;
+        margin-left: 1.5rem;
+        padding: 8px;
         color: #000;
         background-color: #f5f5f5;
         border: 1px solid #000;
@@ -52,12 +53,19 @@ header {
             margin: 0.3rem 0; } }
         header .navContainer .menuDesplegable li:hover {
           background-color: #bc467d; }
+          header .navContainer .menuDesplegable li:hover a {
+            color: #fff !important; }
+        header .navContainer .menuDesplegable li:first-child {
+          margin-left: 0; }
         header .navContainer .menuDesplegable li a {
           text-decoration: none;
           color: #000 !important;
-          font-family: "Roboto", sans-serif; }
+          font-family: "Roboto", sans-serif;
+          padding: 12px; }
       header .navContainer .menuDesplegable .active {
         background-color: #bc467d; }
+        header .navContainer .menuDesplegable .active a {
+          color: #fff !important; }
     header .navContainer div i {
       color: #fff;
       font-size: 1.5rem;
@@ -328,22 +336,23 @@ header {
       box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.192); }
 
 .botonEnviar {
-  margin-top: 0.2rem;
-  font-family: "Nunito", sans-serif;
-  border: 1px solid #bc467d;
-  font-size: 1rem;
-  border-radius: 10px;
-  background: linear-gradient(90deg, #bc467d 0%, #a85079 100%);
-  text-decoration: none;
-  color: #fff;
-  text-align: center;
-  display: inline-block;
-  width: 150px;
-  cursor: pointer;
-  font-family: "Nunito", sans-serif; }
-  .botonEnviar:hover {
-    -webkit-box-shadow: 0px 0px 8px 1px rgba(121, 121, 121, 0.6);
-    box-shadow: 0px 0px 8px 1px rgba(121, 121, 121, 0.6); }
+  margin-top: 0.2rem; }
+  .botonEnviar button {
+    font-family: "Nunito", sans-serif;
+    border: 1px solid #bc467d;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #bc467d 0%, #a85079 100%);
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+    font-family: "Nunito", sans-serif; }
+    .botonEnviar button:hover {
+      -webkit-box-shadow: 0px 0px 8px 1px rgba(121, 121, 121, 0.6);
+      box-shadow: 0px 0px 8px 1px rgba(121, 121, 121, 0.6); }
 
 .itemUmichufisBody a {
   font-family: "Nunito", sans-serif;
