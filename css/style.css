@@ -219,6 +219,8 @@ header {
   align-items: center; }
   .familyUmichufis .familyUmichufisPicture {
     width: 400px; }
+  .familyUmichufis .familyUmichufisPictureTwo {
+    max-width: 900px; }
 
 .tiendaContainer {
   display: flex;
