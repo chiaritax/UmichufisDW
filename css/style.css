@@ -298,7 +298,9 @@ header {
   .collageGaleriaContainer .collageGaleriaItem6 {
     grid-area: seis; }
   .collageGaleriaContainer div img:hover {
-    transform: scale(1.1); }
+    transform: scale(1.03);
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.6); }
 
 .contactForm .contactFormName input, .contactForm .contactFormEmail input, .contactForm .contactFormUser select , .contactForm textarea {
   padding: 8px 15px !important;
