@@ -135,7 +135,13 @@ header {
     margin-bottom: 4.3rem;
     width: 43%;
     max-width: 500px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 375px) {
+      .collage .collageUmichufis {
+        width: 120%; } }
+    @media screen and (max-width: 424px) {
+      .collage .collageUmichufis {
+        margin-bottom: 0; } }
+    @media screen and (min-width: 376px) and (max-width: 768px) {
       .collage .collageUmichufis {
         width: 100%; } }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -158,6 +164,9 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: flex-end; }
+  @media screen and (max-width: 768px) {
+    .monthFav .xmasPromo {
+      height: 300px; } }
 
 .xmasPromoContainer {
   display: grid;
@@ -215,7 +224,6 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0 5%;
   flex-wrap: wrap; }
   .tiendaContainer .itemUmichufis {
     display: flex;
@@ -229,13 +237,29 @@ header {
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.6);
     margin: 1rem;
     padding: 0.5rem; }
+    @media screen and (max-width: 620px) {
+      .tiendaContainer .itemUmichufis {
+        margin: 1rem 0; } }
     .tiendaContainer .itemUmichufis img {
       width: 100%;
-      transition: all 0.2s ease; }
+      transition: all 0.2s ease;
+      max-height: 284px; }
       .tiendaContainer .itemUmichufis img:hover {
         transform: scale(1.1); }
     .tiendaContainer .itemUmichufis .itemUmichufisBody {
-      text-align: center; }
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .tiendaContainer .itemUmichufis .itemUmichufisBody h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0.5rem 0; }
+      .tiendaContainer .itemUmichufis .itemUmichufisBody h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0.5rem 0; }
       .tiendaContainer .itemUmichufis .itemUmichufisBody a {
         margin-top: 0.5rem; }
 

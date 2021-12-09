@@ -3,105 +3,115 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
-  .collage {
-    @include flex(flex, row, center);
-    height: 400px;
-    align-items: center;
-    background-color: $black;
-    clip-path: polygon(0 15%, 100% 4%, 100% 97%, 0 80%);
+.collage {
+  @include flex(flex, row, center);
+  height: 400px;
+  align-items: center;
+  background-color: $black;
+  clip-path: polygon(0 15%, 100% 4%, 100% 97%, 0 80%);
 
-    .collageUmichufis {
-      margin-bottom: 4.3rem;
-      width: 43%;
-      max-width: 500px;
+  .collageUmichufis {
+    margin-bottom: 4.3rem;
+    width: 43%;
+    max-width: 500px;
 
-      @media screen and (max-width: 768px) {
-        width: 100%;
-      }
+    @media screen and (max-width: 375px) {
+      width: 120%;
+    }
 
-      @media screen and (min-width: 768px) and (max-width: 1024px) {
-        width: 70%;
-      }
+    @media screen and (max-width: 424px) {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 376px) and (max-width: 768px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      width: 70%;
     }
   }
-
-  .carouselUmichufis {
-    max-width: 800px;
-    margin: 0 auto;
 }
 
-  .monthFav {
-    margin: 3rem 0;
-    .xmasPromo {
-      background-image: url(../assets/images/navidadPromo.webp);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 500px;
-      @include flex(flex, row, center);
-      align-items: flex-end;
-      }
-      
-    }
+.carouselUmichufis {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  .xmasPromoContainer {   
-    
-      display: grid;
-      justify-content: center;
-      grid-template-areas: "uno dos tres"
-                          "cuatro cinco seis";
-      gap: 10px;
-  
-  
-      @media screen and (max-width: 900px) {
-          grid-template-areas: "uno dos"
-                               "tres cuatro"
-                               "cinco seis";
-      }
-  
-      @media screen and (max-width: 600px) {
-          grid-template-areas: "uno"
-                               "dos"
-                               "tres"
-                               "cuatro"
-                               "cinco"
-                               "seis";
-      }
-  
-      .comboXmas1 {
-          grid-area: uno;
-      }
-  
-      .comboXmas2 {
-          grid-area: dos;
-      }
-  
-      .comboXmas3 {
-          grid-area: tres;
-      }
-  
-      .comboXmas4 {
-          grid-area: cuatro;
-      }
-  
-      .comboXmas5 {
-          grid-area: cinco;
-      }
-
-      .comboXmas6 {
-        grid-area: seis;
-      }
-
-      div {
-        img {
-            &:hover {
-                transform: scale(1.03);
-                -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.6);
-                box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.6);
-            }
-        }
-    }
-
+.monthFav {
+  margin: 3rem 0;
+  .xmasPromo {
+    background-image: url(../assets/images/navidadPromo.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    @include flex(flex, row, center);
+    align-items: flex-end;
   }
-  
+  @media screen and (max-width: 768px) {
+    .xmasPromo {
+      height: 300px;
+    }
+  }
+}
 
+.xmasPromoContainer {
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "uno dos tres"
+    "cuatro cinco seis";
+  gap: 10px;
+
+  @media screen and (max-width: 900px) {
+    grid-template-areas:
+      "uno dos"
+      "tres cuatro"
+      "cinco seis";
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-areas:
+      "uno"
+      "dos"
+      "tres"
+      "cuatro"
+      "cinco"
+      "seis";
+  }
+
+  .comboXmas1 {
+    grid-area: uno;
+  }
+
+  .comboXmas2 {
+    grid-area: dos;
+  }
+
+  .comboXmas3 {
+    grid-area: tres;
+  }
+
+  .comboXmas4 {
+    grid-area: cuatro;
+  }
+
+  .comboXmas5 {
+    grid-area: cinco;
+  }
+
+  .comboXmas6 {
+    grid-area: seis;
+  }
+
+  div {
+    img {
+      &:hover {
+        transform: scale(1.03);
+        -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+}

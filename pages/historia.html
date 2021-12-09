@@ -1,200 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/12a3270994.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
 
-  <!--Font Awesome-->
-  <script src="https://kit.fontawesome.com/12a3270994.js" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-  <!-- AOS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
 
-  <!-- BOOTSTRAP -->
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="../css/style.css" />
+    <!-- FUENTES -->
 
-  <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
-
-   <!-- FAVICON -->
-   <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
 
     <!-- OGP -->
-    
-    <meta name="keywords" content="Umichufis, Mascotas, Perros, Tienda Online, Petshop, E-commerce, Buzos, Libros, Barbijos, Historia de vida, Fotos, Navidad">
-    <meta name="description" content="Esta es la historia de vida de Umichufis">
-    <meta property="og:title" content="@Umichufis - La historia de mi vida"/>
-    <meta property="og:site_name" content="Umichufis">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Esta es la historia de vida de Umichufis">
 
+    <meta
+      name="keywords"
+      content="Umichufis, Mascotas, Perros, Tienda Online, Petshop, E-commerce, Buzos, Libros, Barbijos, Historia de vida, Fotos, Navidad"
+    />
+    <meta
+      name="description"
+      content="Esta es la historia de vida de Umichufis"
+    />
+    <meta property="og:title" content="@Umichufis - La historia de mi vida" />
+    <meta property="og:site_name" content="Umichufis" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Esta es la historia de vida de Umichufis"
+    />
 
-  <title>@Umichufis - La historia de mi vida</title>
-</head>
+    <title>@Umichufis - La historia de mi vida</title>
+  </head>
 
-<body>
-  <!--INICIO HEADER -->
-  <header>
-    <nav class="navContainer">
-      <a href="../index.html">
-        <img class="logo" src="../assets/images/UmichufisLogo.webp" alt="Logo Umichufis">
-      </a>
-      <ul class="menuDesplegable d-none d-md-flex">
-        <li><a href="../index.html">Home</a></li>
-        <li class="active"><a href="historia.html">Mi Historia</a></li>
-        <li><a href="tienda.html">Tienda</a></li>
-        <li><a href="galeria.html">Galeria</a></li>
-        <li><a href="contacto.html">Contactanos</a></li>
-      </ul>
-      <div class="d-none d-md-flex">
-        <i class=" fas fa-shopping-cart"></i>
-      </div>
-      <button class="btn btnMenuDesplegable d-md-none d-sm-block" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bars"></i></button>
-
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-          <h5 id="offcanvasRightLabel">Umichufis</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="menuDesplegable">
-            <li><a href="../index.html">Home</a></li>
-            <li class="active"><a href="historia.html">Mi Historia</a></li>
-            <li><a href="tienda.html">Tienda</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="contacto.html">Contactanos</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!--FIN HEADER -->
-
-  <!--TITULO DE LA PAGINA -->
-  <section class="titleContainer">
-    <h1 class="titleContainerTitle">
-      La historia de <span class="titleContainerUmichufis">Umichufis</span>
-    </h1>
-  </section>
-
-  <!-- ACA VA LA HISTORIA -->
-  <section class="container">
-    <p class="storieContainerText">
-      La historia de Uma, mejor conocida como Umichufis, comienza en 2018. Una perrita comprada y abandonada 
-      en una casa de fin de semana, viviendo a la intemperie, con dos baldes de comida, agua y un collar electrico
-      para no escaparme y ladrar. 
-    </p>
-    <p class="storieContainerText">
-      Un dia muy lluvioso, Martin, en su momento mi vecino y ahora mi papá, pasó y me vio tratando de esconderme
-      debajo de una bolsa de arena y sin importar la lluvia, me le acerque para que me de un poquito de amor y mimos.
-      El se acercó y cansado de esta situación me saco el collar electrico con todas sus fuerzas, me subio a upa 
-      y huimos juntos.
-      Por los primeros dos meses, me llevo a vivir a la casa de la abuela Blanca y me iba a visitar todos los dias llevandome
-      regalitos.
-      En ese momento empece a sentir lo que de verdad siente un perrito amado, pero seguia teniendo muchos miedos, como salir al patio
-      a hacer pis o tomar sol porque tenia miedo de que me vuelvan a abandonar, tambien me asustaba ladrar por culpa del collar que me 
-      habian puesto antes.
-      Meses mas tarde, me mude a mi casa nueva con Martin y mi nueva familia.
-    </p>
-  </section>
-
-  <!-- IMAGEN NRO 1 DE UMICHUFIS -->
-  <section class="storieUmichufis">
-    <img class="storieUmichufisPicture" src="../assets/images/historiaFotoUno.webp" alt="Carrousel Umichufis" loading=“lazy” />
-  </section>
-
-  <!-- CONTINUA LA HISTORIA -->
-  <section class="container">
-    <p class="storieContainerText">
-      Ya en la nueva casa, conocí a mi hermana Morita, de la cual aprendi muchas cosas como hacer pis afuera, y animarme a salir 
-      para jugar con ella.
-      Tiempo despues, llego mi hermana Olivia, un Bulldog Frances muy lindo, pero a la que debo confesar aun le tengo un
-      poco de miedo de que me aplaste.
-      Durante este tiempo vivi muchas cosas lindas, conocí la plaza, me llevaron mucho de paseo y hasta fui a la playa. 
-    </p>
-    <p class="storieContainerText">
-      Luego de algunos años, mi papá me llevó a conocer a mi mami, nos encariñamos muy rapido y al poco tiempo nos fuimos a 
-      vivir con ella. Al principio me costo bastante acostumbrarme al barrio, me sentia una perrita de campo en la gran ciudad. 
-      Apenas llegamos me compraron lo que ahora es mi pelota favorita y mucha ropita linda para salir a pasear.
-      En este ultimo tiempo, conoci a varios de mis tios que hasta me llevaron a navegar en barco y comer asado.
-      Hoy en dia, estamos planeando muchas locuras con mami y papi, desde un viaje al sur hasta subirme a un avion! 
-      Por el momento, sigo durmiendo en el medio de la cama y recibiendo muchos mimos.
-
-    </p>
-  </section>
-
-  <!-- IMAGEN NRO 2 DE UMICHUFIS, ESTA NO ES LA FINAL -->
-  <section class="familyUmichufis">
-    <img class="familyUmichufisPicture" src="../assets/images/historiaFotoUno.webp" alt="Carrousel Umichufis" loading=“lazy”/>
-  </section>
-
-  <!-- FOOTER @UMICHUFIS -->
-  <footer>
-    <div class="socialContainer">
-      <!--Aca van los iconos de redes sociales-->
-      <a target="_blank" href="http://www.instagram.com/umichufis"><i class="fab fa-instagram"></i></a>
-      <a target="_blank" href="http://www.twitter.com/chiaritax"><i class="fab fa-twitter"></i></a>
-    </div>
-
-    <div class="informationContainer">
-      <nav class="informationContainerItems">
-        <ul>
-          <li>Terminos y Condiciones</li>
-          <li>Metodos de Pago</li>
-          <li>Envios</li>
-          <li>Devoluciones</li>
-          <li>Preguntas Frecuentes</li>
-          <li>Estamos contratando!</li>
+  <body>
+    <!--INICIO HEADER -->
+    <header>
+      <nav class="navContainer">
+        <a href="../index.html">
+          <img
+            class="logo"
+            src="../assets/images/UmichufisLogo.webp"
+            alt="Logo Umichufis"
+          />
+        </a>
+        <ul class="menuDesplegable d-none d-md-flex">
+          <li><a href="../index.html">Home</a></li>
+          <li class="active"><a href="historia.html">Mi Historia</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="contacto.html">Contactanos</a></li>
         </ul>
+        <div class="d-none d-md-flex">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        <button
+          class="btn btnMenuDesplegable d-md-none d-sm-block"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Umichufis</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="menuDesplegable">
+              <li><a href="../index.html">Home</a></li>
+              <li class="active"><a href="historia.html">Mi Historia</a></li>
+              <li><a href="tienda.html">Tienda</a></li>
+              <li><a href="galeria.html">Galeria</a></li>
+              <li><a href="contacto.html">Contactanos</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
-    </div>
+    </header>
+    <!--FIN HEADER -->
 
-    <!-- FORMULARIO DE CONTACTO - @UMICHUFIS -->
-    <section class="contactContainer">
-      <div class="contactContainerTitle">
-        <p>Contactanos</p>
-      </div>
-      <div class="contactContainerEmail">
-        <p>admin@umichufis.com</p>
-      </div>
-      <div class="contactContainerBox">
-        <p class="contactContainerBoxname">Suscribite a nuestro Newsletter</p>
-      </div>
-      <div class="boxContainer">
-        <div>
-          <input type="email" name="email" id="" placeholder="E-mail" />
-        </div>
-        <div class="botonEnviar">
-          <button>Enviar</button>
-        </div>
-      </div>
+    <!--TITULO DE LA PAGINA -->
+    <section class="titleContainer">
+      <h1 class="titleContainerTitle">
+        La historia de <span class="titleContainerUmichufis">Umichufis</span>
+      </h1>
     </section>
-  </footer>
-  <!--FIN DEL FOOTER -->
 
-  <!-- BOOTSTRAP -->
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- ACA VA LA HISTORIA -->
+    <section class="container">
+      <p class="storieContainerText">
+        La historia de Uma, mejor conocida como Umichufis, comienza en 2018. Una
+        perrita comprada y abandonada en una casa de fin de semana, viviendo a
+        la intemperie, con dos baldes de comida, agua y un collar electrico para
+        no escaparme y ladrar.
+      </p>
+      <p class="storieContainerText">
+        Un dia muy lluvioso, Martin, en su momento mi vecino y ahora mi papá,
+        pasó y me vio tratando de esconderme debajo de una bolsa de arena y sin
+        importar la lluvia, me le acerque para que me de un poquito de amor y
+        mimos. El se acercó y cansado de esta situación me saco el collar
+        electrico con todas sus fuerzas, me subio a upa y huimos juntos. Por los
+        primeros dos meses, me llevo a vivir a la casa de la abuela Blanca y me
+        iba a visitar todos los dias llevandome regalitos. En ese momento empece
+        a sentir lo que de verdad siente un perrito amado, pero seguia teniendo
+        muchos miedos, como salir al patio a hacer pis o tomar sol porque tenia
+        miedo de que me vuelvan a abandonar, tambien me asustaba ladrar por
+        culpa del collar que me habian puesto antes. Meses mas tarde, me mude a
+        mi casa nueva con Martin y mi nueva familia.
+      </p>
+    </section>
 
-  <!-- AOS SCRIPT -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-      AOS.init();
-  </script>
-</body>
+    <!-- IMAGEN NRO 1 DE UMICHUFIS -->
+    <section class="storieUmichufis">
+      <img
+        class="storieUmichufisPicture"
+        src="../assets/images/historiaFotoUno.webp"
+        alt="Carrousel Umichufis"
+        loading="“lazy”"
+      />
+    </section>
 
+    <!-- CONTINUA LA HISTORIA -->
+    <section class="container">
+      <p class="storieContainerText">
+        Ya en la nueva casa, conocí a mi hermana Morita, de la cual aprendi
+        muchas cosas como hacer pis afuera, y animarme a salir para jugar con
+        ella. Tiempo despues, llego mi hermana Olivia, un Bulldog Frances muy
+        lindo, pero a la que debo confesar aun le tengo un poco de miedo de que
+        me aplaste. Durante este tiempo vivi muchas cosas lindas, conocí la
+        plaza, me llevaron mucho de paseo y hasta fui a la playa.
+      </p>
+      <p class="storieContainerText">
+        Luego de algunos años, mi papá me llevó a conocer a mi mami, nos
+        encariñamos muy rapido y al poco tiempo nos fuimos a vivir con ella. Al
+        principio me costo bastante acostumbrarme al barrio, me sentia una
+        perrita de campo en la gran ciudad. Apenas llegamos me compraron lo que
+        ahora es mi pelota favorita y mucha ropita linda para salir a pasear. En
+        este ultimo tiempo, conoci a varios de mis tios que hasta me llevaron a
+        navegar en barco y comer asado. Hoy en dia, estamos planeando muchas
+        locuras con mami y papi, desde un viaje al sur hasta subirme a un avion!
+        Por el momento, sigo durmiendo en el medio de la cama y recibiendo
+        muchos mimos.
+      </p>
+    </section>
+
+    <!-- IMAGEN NRO 2 DE UMICHUFIS, ESTA NO ES LA FINAL -->
+    <section class="familyUmichufis">
+      <img
+        class="familyUmichufisPicture"
+        src="../assets/images/historiaFotoUno.webp"
+        alt="Carrousel Umichufis"
+        loading="“lazy”"
+      />
+    </section>
+
+    <!-- FOOTER @UMICHUFIS -->
+    <footer>
+      <div class="socialContainer">
+        <!--Aca van los iconos de redes sociales-->
+        <a
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram"
+          href="http://www.instagram.com/umichufis"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          href="http://www.twitter.com/chiaritax"
+          ><i class="fab fa-twitter"></i>
+        </a>
+      </div>
+
+      <div class="informationContainer">
+        <nav class="informationContainerItems">
+          <ul>
+            <li>Terminos y Condiciones</li>
+            <li>Metodos de Pago</li>
+            <li>Envios</li>
+            <li>Devoluciones</li>
+            <li>Preguntas Frecuentes</li>
+            <li>Estamos contratando!</li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- FORMULARIO DE CONTACTO - @UMICHUFIS -->
+      <section class="contactContainer">
+        <div class="contactContainerTitle">
+          <p>Contactanos</p>
+        </div>
+        <div class="contactContainerEmail">
+          <p>admin@umichufis.com</p>
+        </div>
+        <div class="contactContainerBox">
+          <p class="contactContainerBoxname">Suscribite a nuestro Newsletter</p>
+        </div>
+        <div class="boxContainer">
+          <div>
+            <input type="email" name="email" id="" placeholder="E-mail" />
+          </div>
+          <div class="botonEnviar">
+            <button>Enviar</button>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!--FIN DEL FOOTER -->
+
+    <!-- BOOTSTRAP -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
