@@ -22,16 +22,12 @@
     width: 400px;
   }
 }
-
-.familyUmichufis {
+.familyFlex {
   @include flex(flex, row, center);
-  align-items: center;
-
-  .familyUmichufisPicture {
-    width: 400px;
-  }
-
-  .familyUmichufisPictureTwo {
+  
+  .familyUmichufis {
+    @include flex(flex, row, center);
+    align-items: center;
     max-width: 900px;
   }
 }

@@ -212,14 +212,15 @@ header {
   .storieUmichufis .storieUmichufisPicture {
     width: 400px; }
 
-.familyUmichufis {
+.familyFlex {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-  .familyUmichufis .familyUmichufisPicture {
-    width: 400px; }
-  .familyUmichufis .familyUmichufisPictureTwo {
+  justify-content: center; }
+  .familyFlex .familyUmichufis {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     max-width: 900px; }
 
 .tiendaContainer {
