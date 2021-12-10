@@ -62,6 +62,9 @@ header {
           color: #000 !important;
           font-family: "Roboto", sans-serif;
           padding: 12px; }
+          @media screen and (max-width: 768px) {
+            header .navContainer .menuDesplegable li a {
+              padding: 12px 80px; } }
       header .navContainer .menuDesplegable .active {
         background-color: #bc467d; }
         header .navContainer .menuDesplegable .active a {
@@ -469,3 +472,6 @@ footer {
       text-align: center; }
     footer .contactContainer .boxContainer {
       text-align: center; }
+      @media screen and (max-width: 768px) {
+        footer .contactContainer .boxContainer {
+          margin-bottom: 1rem; } }
