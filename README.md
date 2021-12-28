@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on **Umichufis**
 
-- 🌱 I’m currently learning **HTML, CSS, SASS & Bootstrap**
+- 🌱 I’m currently learning **HTML, CSS, SASS, Bootstrap & JS**
 
 - 📫 How to reach me **chiaramicolfquerol@gmail.com**
 
