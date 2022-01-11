@@ -1,11 +1,31 @@
-const name = prompt("¿Cómo te llamas?");
-
-const greet = (name) => {
-    alert(`Hola ${name}`);
-}
-greet(name);
-
+const clients = [];
 const productsInCart = [];
+
+class Client {
+    constructor(name, lastName, age, email) {
+        this.name = name;
+        this.lastName = lastName;
+        this.age = age;
+        this.email = email;
+    }
+}
+
+const newClient = () => {
+    alert(`Hola vamos a crear tu perfil!`);
+    let client = new Client(prompt(`Ingresa tu nombre:`), prompt(`Ingresa tu apellido:`), prompt(`Ingresa tu edad:`), prompt(`Ingresa tu email:`));
+    clients.push(client);
+    alert(`Bienvenido ${client.name} ${client.lastName}`);
+    console.table(clients);
+    askProduct();
+}
+
+class Product {
+    constructor(name, price) {
+        this.name = name;
+        this.price = price;
+    }
+}
+
 
 const products = [
     {
@@ -54,14 +74,30 @@ const askForAnotherProduct = () => {
         askProduct();
     } else if (answer == "no" || answer == "No" || answer == "NO") {
         alert(`${name} Tu compra tiene un total de $${totalPrice()}`);
+        askForNewProduct();
     } else {
         alert("Respuesta no válida");
         askForAnotherProduct();
     }
 }
 
+const askForNewProduct = () => {
+    const answer = prompt("¿Quieres crear otro producto? Escriba 'Si' o 'No'");
+    if (answer == "si" || answer == "Si" || answer == "SI") {
+        let newProduct = new Product(prompt("Nombre del producto"), Number(prompt("Precio del producto")));
+        alert(`${newProduct.name} fue agregado a la lista de productos con un precio de $${newProduct.price}`);
+        products.push(newProduct);
+        askForNewProduct();
+    } else if (answer == "no" || answer == "No" || answer == "NO") {
+        alert(`${clients[0].name} que tengas un buen día! :)`);
+    } else {
+        alert("Respuesta no válida");
+        askForNewProduct();
+    }
+}
+
 const askProduct = () => {
-    const productId = prompt("¿Qué producto deseas agregar? Escriba el ID del producto \n 1 - Buzo Umichufis \n 2 - Buzo Umichufis Limited Edition \n 3 - Barbijo Umichufis \n 4 - Buzo Queen Umichufis \n 5 - Taza Umichufis \n 6 - Libro Umichufis");
+    const productId = prompt(`¿Qué producto deseas agregar? Escriba el ID del producto \n 1 - ${products[0].nombre} \n 2 - ${products[1].nombre} \n 3 - ${products[2].nombre} \n 4 - ${products[3].nombre} \n 5 - ${products[4].nombre} \n 6 - ${products[5].nombre}`);
     const product = products.find(product => product.id == productId);
     if (product) {
         productsInCart.push(product);
@@ -72,5 +108,4 @@ const askProduct = () => {
         askProduct();
     }
 }
-
-askProduct();
+newClient();
