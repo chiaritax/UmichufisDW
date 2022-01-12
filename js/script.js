@@ -96,6 +96,12 @@ const askForNewProduct = () => {
     }
 }
 
+const orderProducts = () => {
+    let orderedProducts = products.sort((a, b) => (a.precio > b.precio ? 1 : -1));
+    console.table(orderedProducts)
+}
+orderProducts();
+
 const askProduct = () => {
     const productId = prompt(`¿Qué producto deseas agregar? Escriba el ID del producto \n 1 - ${products[0].nombre} \n 2 - ${products[1].nombre} \n 3 - ${products[2].nombre} \n 4 - ${products[3].nombre} \n 5 - ${products[4].nombre} \n 6 - ${products[5].nombre}`);
     const product = products.find(product => product.id == productId);
